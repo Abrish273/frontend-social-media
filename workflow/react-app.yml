@@ -1,10 +1,11 @@
 name: React App CI
 
 on:
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
